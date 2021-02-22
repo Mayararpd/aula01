@@ -1,0 +1,172 @@
+body{
+	width: 95vw;
+	height: 99vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	background: url(img/fundcardform.jpg);
+	/*background-color: #060c21;*/
+	padding-left: 50px;
+	padding-bottom: 10px;
+	
+}
+.cards{
+	display: grid;	
+	grid-template-columns: 270px;
+	grid-template-rows: 170px 170px 50px;
+	grid-template-areas: "img" "texto" "stats";
+	flex-wrap: wrap;
+
+	font-family: arial;
+	border-radius: 18px;
+	background: white;
+	
+	text-align: center;
+	transition: 0.5s ease;
+	cursor: pointer;
+	margin: 10px;
+	/*overflow: hidden;*/
+
+}
+/*.............sop..........*/
+.cards-img{
+	grid-area:img;
+	background: url(img/soopp.jpg);
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	/*background-size: cover;*/
+}
+.cards-texto{
+	grid-area: texto;
+	margin: 25px;
+}
+.cards-texto p{
+	color: grey;
+	font-size: 15px;
+	/*font-weight: 300;*/
+}
+.cards-texto h2{
+	margin-top: 0px;
+	font-size: 28px;
+}
+.cards-rodape{
+	grid-area: stats;
+	display: grid;
+	
+	grid-template-rows: 1fr;
+	border-bottom-left-radius: 15px; 
+	border-bottom-right-radius: 15px;
+	/*background: dodgerblue;*/
+	background: linear-gradient(to right,#00008B,#4169E1,#00BFFF);
+}
+.cards-rodape .informacao a
+{
+	font-weight: bold;
+	color: black;	
+}
+.cards:hover{
+	transform: scale(1.2);
+	box-shadow:  5px 5px 15px rgb(25,25,112);
+}
+/*..............hare.......*/
+.cards2-img{
+	grid-area:img;
+	background: url(img/hare.jpg);
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	/*background-size: cover;*/
+}
+.cards2-texto{
+	grid-area: texto;
+	margin: 25px;
+}
+.cards2-rodape{
+	grid-area: stats;
+	display: grid;	
+	border-bottom-left-radius: 15px; 
+	border-bottom-right-radius: 15px;
+	background: linear-gradient(to right, #00008B,#4169E1,#00BFFF);	
+}
+.cards2-rodape .informacao a{
+	font-weight: bold;
+	color: black;	
+}
+/*........... LIMA.....................*/
+.cards3-img{
+	grid-area:img;
+	background: url(img/lima.jpg);
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-size: cover;
+}
+.cards3-texto{
+	grid-area: texto;
+	margin: 25px;
+}
+.cards3-rodape{
+	grid-area: stats;
+	display: grid;
+
+	grid-template-rows: 1fr;
+	border-bottom-left-radius: 15px; 
+	border-bottom-right-radius: 15px;
+	
+	background: linear-gradient(to right, #00008B,#4169E1,#00BFFF);
+}
+.cards3-rodape .informacao a
+{
+	font-weight: bold;
+	color: black;	
+}		
+	/*.....................FPOO.............*/
+.cards4-img{
+	grid-area:img;
+	background: url(img/fpoo.jpg);
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-size: cover;
+}
+.cards4-texto{
+	grid-area: texto;
+	margin: 25px;
+}
+.cards4-rodape{
+	grid-area: stats;
+	display: grid;
+	
+	grid-template-rows: 1fr;
+	border-bottom-left-radius: 15px; 
+	border-bottom-right-radius: 15px;
+	background: linear-gradient(to right,#00008B,#4169E1,#00BFFF)  
+}
+.cards4-rodape .informacao a{
+	font-weight: bold;
+	color: black;	
+}	
+.informacao a{
+	padding-top:20px;
+}
+/*.......boataosair.......*/
+.container{
+	display: flex;
+	flex-wrap: wrap;
+}
+ .botao { 	
+    width: 200px;
+	margin: auto;
+	padding-top: 40px;
+	border-radius: 30px;
+	padding: 15px;
+	
+	outline: 0px;/* tira a borda quando clica*/	
+	cursor: pointer;
+    background-image: linear-gradient(to right,blue,cyan, seagreen );
+    text-align: center;
+}
+.botao:hover{
+	background-image: linear-gradient(to right, seagreen,cyan, #060c21)
+}
+.botao a{
+	
+	color: #060c21;
+}
